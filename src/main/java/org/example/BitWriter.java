@@ -1,5 +1,7 @@
 package org.example;
 
+import java.io.OutputStream;
+
 public interface BitWriter
 {
     // establece el outputStream donde escribirá los bits
