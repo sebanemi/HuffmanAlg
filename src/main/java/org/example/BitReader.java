@@ -2,7 +2,6 @@ package org.example;
 
 import java.io.InputStream;
 
-
 public interface BitReader
 {
     // establece el inputStream desde donde leerá los bits
