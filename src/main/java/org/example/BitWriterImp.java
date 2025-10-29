@@ -3,7 +3,7 @@ package org.example;
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class BitWriterImp implements BitWriter{
+public class BitWriterImp implements BitWriter, AutoCloseable {
     private OutputStream os;
     private int currentByte = 0;
     private int numBitsFilled = 0;
@@ -18,7 +18,10 @@ public class BitWriterImp implements BitWriter{
         if(os == null){
             throw new IllegalStateException("Output stream is null");
         }
-        bit = (bit != 0) ? 1 : 0;
+        if(bit != 0 && bit!= 1){
+            throw new IllegalStateException("Invalid bit");
+        }
+
         currentByte = (currentByte<<1) | bit;
         numBitsFilled++;
 
@@ -46,5 +49,11 @@ public class BitWriterImp implements BitWriter{
         }catch(IOException e){
             throw new RuntimeException("Error al hacer flush: " + e.getMessage());
         }
+    }
+
+    //@Override
+    public void close() throws IOException { // 👈 Implementación obligatoria
+        flush();
+        if (os != null) os.close();
     }
 }

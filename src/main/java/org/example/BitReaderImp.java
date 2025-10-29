@@ -3,7 +3,7 @@ package org.example;
 import java.io.InputStream;
 import java.io.IOException;
 
-public class BitReaderImp implements BitReader{
+public class BitReaderImp implements BitReader, AutoCloseable {
     private InputStream in;
     private int currentByte = 0;
     private int numBitsRemaining = 0;
@@ -43,5 +43,10 @@ public class BitReaderImp implements BitReader{
         }catch(IOException e){
             throw new RuntimeException("Error al cerrar InputStream",e);
         }
+    }
+
+    @Override
+    public void close() throws Exception {
+
     }
 }
