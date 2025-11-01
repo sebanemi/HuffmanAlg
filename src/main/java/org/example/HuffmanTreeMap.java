@@ -46,7 +46,7 @@ public class HuffmanTreeMap {
         }
     }
 
-    // ✅ Devuelve una lista con los pares símbolo-código (HuffmanTable)
+
     public List<HuffmanTable> toTableList() {
         List<HuffmanTable> table = new ArrayList<>();
         for (Map.Entry<Integer, String> entry : codeBySymbol.entrySet()) {

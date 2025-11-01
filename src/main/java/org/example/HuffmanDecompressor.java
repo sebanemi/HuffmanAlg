@@ -13,13 +13,13 @@ public class HuffmanDecompressor {
 
             reader.using(is);
 
-            // 1️⃣ Leer la tabla de frecuencias
+
             int[] freq = new int[256];
             for (int i = 0; i < freq.length; i++) {
                 freq[i] = dis.readInt();
             }
 
-            // 2️⃣ Reconstruir el árbol Huffman
+
             List<HuffmanInfo> nodos = new ArrayList<>();
             for (int i = 0; i < freq.length; i++) {
                 if (freq[i] > 0) {
@@ -37,7 +37,7 @@ public class HuffmanDecompressor {
 
             HuffmanInfo root = nodos.get(0);
 
-            // 3️⃣ Leer los bits y reconstruir los bytes originales
+
             HuffmanInfo actual = root;
             int bit;
             while ((bit = reader.readBit()) != -1) {

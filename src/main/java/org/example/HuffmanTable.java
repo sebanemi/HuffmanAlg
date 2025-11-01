@@ -1,10 +1,10 @@
 package org.example;
 
 public class HuffmanTable {
-    private int n;       // frecuencia del símbolo
-    private String cod;  // código Huffman asignado
+    private int n;
+    private String cod;
 
-    // --- Constructores ---
+    
     public HuffmanTable() {
         this.n = 0;
         this.cod = "";
@@ -15,7 +15,7 @@ public class HuffmanTable {
         this.cod = cod;
     }
 
-    // --- Getters y Setters ---
+
     public int getN() {
         return n;
     }
@@ -32,7 +32,7 @@ public class HuffmanTable {
         this.cod = cod;
     }
 
-    // --- Métodos útiles ---
+
     public void incrementar() {
         this.n++;
     }

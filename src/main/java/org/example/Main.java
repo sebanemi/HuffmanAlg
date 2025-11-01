@@ -13,7 +13,7 @@ public class Main {
         System.out.println("2. Descomprimir archivo");
         System.out.print("Opción: ");
         int opcion = sc.nextInt();
-        sc.nextLine(); // limpiar buffer
+        sc.nextLine();
 
         try {
             if (opcion == 1) {
