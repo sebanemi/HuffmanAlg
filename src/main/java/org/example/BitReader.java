@@ -5,6 +5,7 @@ import java.io.InputStream;
 public interface BitReader
 {
 
+
     public void using(InputStream is);
 
 

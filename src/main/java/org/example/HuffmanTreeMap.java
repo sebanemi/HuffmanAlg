@@ -63,7 +63,7 @@ public class HuffmanTreeMap {
         return codeBySymbol.size();
     }
 
-    // Clase interna auxiliar
+
     private static final class NodePath {
         final HuffmanInfo node;
         final String path;

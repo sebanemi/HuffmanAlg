@@ -52,7 +52,7 @@ public class HuffmanDecompressor {
             throw new RuntimeException(e);
         }
 
-        System.out.println("✅ Descompresión completada: " + outputFile);
+        System.out.println("✅ Descompresión ya completada: " + outputFile);
     }
 }
 

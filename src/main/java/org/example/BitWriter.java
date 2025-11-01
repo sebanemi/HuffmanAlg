@@ -5,6 +5,7 @@ import java.io.OutputStream;
 public interface BitWriter
 {
 
+
     public void using(OutputStream os);
 
 

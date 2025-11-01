@@ -8,7 +8,7 @@ public class Main {
         HuffmanCompressor compressor = new HuffmanCompressor();
         HuffmanDecompressor decompressor = new HuffmanDecompressor();
 
-        System.out.println("=== HUFFMAN ===");
+        System.out.println("==== HUFFMAN ====");
         System.out.println("1. Comprimir archivo");
         System.out.println("2. Descomprimir archivo");
         System.out.print("Opción: ");

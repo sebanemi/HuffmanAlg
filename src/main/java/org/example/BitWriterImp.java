@@ -52,7 +52,7 @@ public class BitWriterImp implements BitWriter, AutoCloseable {
     }
 
     //@Override
-    public void close() throws IOException { // 👈 Implementación obligatoria
+    public void close() throws IOException {
         flush();
         if (os != null) os.close();
     }

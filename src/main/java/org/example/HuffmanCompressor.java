@@ -64,6 +64,6 @@ public class HuffmanCompressor {
             writer.flush();
         }
 
-        System.out.println("✅ Compresión completada: " + outputFile);
+        System.out.println("✅ Compresión ya completada: " + outputFile);
     }
 }

@@ -4,7 +4,6 @@ public class HuffmanTable {
     private int n;
     private String cod;
 
-    
     public HuffmanTable() {
         this.n = 0;
         this.cod = "";

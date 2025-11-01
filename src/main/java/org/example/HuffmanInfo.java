@@ -11,6 +11,7 @@ public class HuffmanInfo
     private int idAuxiliar = 0;
 
 
+
     public HuffmanInfo(Byte dato, int frecuencia) {
         this.c = Byte.toUnsignedInt(dato);
         this.n = frecuencia;
