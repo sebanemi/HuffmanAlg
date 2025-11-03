@@ -34,7 +34,7 @@ public class Main {
                 System.out.println("Opción inválida.");
             }
         } catch (Exception e) {
-            System.err.println("⚠️ Error: " + e.getMessage());
+            System.err.println(" Error: " + e.getMessage());
             e.printStackTrace();
         }
     }
