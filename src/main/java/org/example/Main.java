@@ -17,16 +17,16 @@ public class Main {
 
         try {
             if (opcion == 1) {
-                System.out.print("Archivo a comprimir: ");
+                System.out.print("Nombre archivo a comprimir: ");
                 String input = sc.nextLine();
-                System.out.print("Archivo comprimido: ");
+                System.out.print("Nombre archivo comprimido(.huf): ");
                 String output = sc.nextLine();
                 compressor.compress(input, output);
 
             } else if (opcion == 2) {
-                System.out.print("Archivo a descomprimir: ");
+                System.out.print("Nombre archivo a descomprimir(.huf): ");
                 String input = sc.nextLine();
-                System.out.print("Archivo descomprimido: ");
+                System.out.print("Nombre archivo descomprimido: ");
                 String output = sc.nextLine();
                 decompressor.decompress(input, output);
 
