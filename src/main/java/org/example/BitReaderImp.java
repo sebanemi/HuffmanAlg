@@ -16,7 +16,7 @@ public class BitReaderImp implements BitReader, AutoCloseable {
     @Override
     public int readBit(){
         if(in==null){
-            throw new IllegalStateException("Input stream is null");
+            throw new IllegalStateException("Input stream es nulo");
         }
         try{
             if(numBitsRemaining==0){

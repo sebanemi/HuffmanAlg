@@ -16,7 +16,7 @@ public class BitWriterImp implements BitWriter, AutoCloseable {
     @Override
     public void writeBit(int bit) {
         if(os == null){
-            throw new IllegalStateException("Output stream is null");
+            throw new IllegalStateException("Output stream es nulo");
         }
         if(bit != 0 && bit!= 1){
             throw new IllegalStateException("Invalid bit");
@@ -51,7 +51,7 @@ public class BitWriterImp implements BitWriter, AutoCloseable {
         }
     }
 
-    //@Override
+
     public void close() throws IOException {
         flush();
         if (os != null) os.close();
