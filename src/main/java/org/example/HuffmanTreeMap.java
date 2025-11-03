@@ -46,7 +46,7 @@ public class HuffmanTreeMap {
         }
     }
 
-    // ✅ Devuelve una lista con los pares símbolo-código (HuffmanTable)
+
     public List<HuffmanTable> toTableList() {
         List<HuffmanTable> table = new ArrayList<>();
         for (Map.Entry<Integer, String> entry : codeBySymbol.entrySet()) {
@@ -63,7 +63,7 @@ public class HuffmanTreeMap {
         return codeBySymbol.size();
     }
 
-    // Clase interna auxiliar
+
     private static final class NodePath {
         final HuffmanInfo node;
         final String path;

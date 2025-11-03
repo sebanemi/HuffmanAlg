@@ -8,12 +8,12 @@ public class Main {
         HuffmanCompressor compressor = new HuffmanCompressor();
         HuffmanDecompressor decompressor = new HuffmanDecompressor();
 
-        System.out.println("=== HUFFMAN ===");
+        System.out.println("==== HUFFMAN ====");
         System.out.println("1. Comprimir archivo");
         System.out.println("2. Descomprimir archivo");
         System.out.print("Opción: ");
         int opcion = sc.nextInt();
-        sc.nextLine(); // limpiar buffer
+        sc.nextLine();
 
         try {
             if (opcion == 1) {
@@ -34,7 +34,7 @@ public class Main {
                 System.out.println("Opción inválida.");
             }
         } catch (Exception e) {
-            System.err.println("⚠️ Error: " + e.getMessage());
+            System.err.println(" Error: " + e.getMessage());
             e.printStackTrace();
         }
     }
